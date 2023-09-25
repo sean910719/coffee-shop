@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:label="@string/menu_setting"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mynavdrawer.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.mynavdrawer.ui.gallery.GalleryFragment"
+        android:label="@string/menu_Gmap"
+        tools:layout="@layout/fragment_gallery" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_ShoppingCart"
+        android:name="com.example.mynavdrawer.ui.ShoppingCart.ShoppingCartFragment"
+        android:label="@string/menu_ShoppingCart"
+        tools:layout="@layout/fragment_shoppingcart" />
+
+    <fragment
+        android:id="@+id/nav_rule"
+        android:name="com.example.mynavdrawer.ScrollingActivity"
+        android:label="@string/menu_rule"
+        tools:layout="@layout/activity_scrolling" />
+
+    <fragment
+        android:id="@+id/nav_log_out"
+        android:name="com.example.mynavdrawer.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_Logout"
+        tools:layout="@layout/layout_login" >
+    </fragment>
+
+</navigation>
